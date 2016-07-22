@@ -1,0 +1,47 @@
+//
+// Prefix header for all source files of the 'SlideMenu' target in the 'SlideMenu' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+#endif
+
+
+#define TESTTESTTEST 0
+
+
+#if TESTTESTTEST
+
+#define SEVER_URL                           [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetInitialProducts.php"]
+#define CATERGORIES_URL                     [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetCategories.php"]
+#define GET_CATERGORIES_URL                 [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetProductsByCategory.php"]
+#define GET_PRODUCTS_BY_BRAND_URL           [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetProductsByBrand.php"]
+#define GET_PRODUCTS_BY_PRICE_URL           [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetProductsByPrice.php"]
+#define GET_PRODUCTS_BY_SELLER_URL          [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/GetProductsBySeller.php"]
+
+#define SIGNUP_URL                          [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/signup.php"]
+#define LOGIN_URL                           [NSURL URLWithString: @"http://192.168.0.32/mobile_backend/login.php"]
+#define UPLOAD_IMG_URL                      @"http://192.168.0.32/mobile_backend/uploads"
+
+#else
+
+#define SEVER_URL                           [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetInitialProducts.php"]
+#define CATERGORIES_URL                     [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetCategories.php"]
+#define GET_CATERGORIES_URL                 [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetProductsByCategory.php"]
+#define GET_PRODUCTS_BY_BRAND_URL           [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetProductsByBrand.php"]
+#define GET_PRODUCTS_BY_PRICE_URL           [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetProductsByPrice.php"]
+#define GET_PRODUCTS_BY_SELLER_URL          [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/GetProductsBySeller.php"]
+
+#define SIGNUP_URL                          [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/signup.php"]
+#define LOGIN_URL                           [NSURL URLWithString: @"http://www.sulitapp.com/mobile_backend/login.php"]
+#define UPLOAD_IMG_URL                      @"http://www.sulitapp.com/mobile_backend/uploads"
+
+
+#endif
